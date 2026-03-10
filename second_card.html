@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Second Card</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .container{
+            width: 100vw;
+            height: 100vh;
+            /* background: #020024;  */
+            /* min-height: 700px; */
+            background: #2A7B9B;
+            background: linear-gradient(90deg, rgba(42, 123, 155, 1) 0%, rgba(87, 199, 133, 1)          50%, rgba(237, 221, 83, 1) 100%);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .cardbox {
+            height: 480px;
+            width: 300px;
+            background-color: rgb(255, 255, 255);
+            border-radius: 15px;
+            display: flex;
+            flex-direction: column;
+            justify-content:flex-start;
+            align-items: center;
+            gap : 10px;
+        }
+
+        .cardbox img {
+            width:100%;
+            height: 30%;
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+        }
+
+        .textbox {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 25px;
+            width: 90%;
+            padding: 10px;
+            text-align: center;
+
+        }
+        .amountbox{
+            width:70%;
+            height: 45px;
+            background-color: aqua;
+            border-radius: 10px;
+            padding-right: 20px;
+            padding-left: 12px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+
+        .leftbox{
+            width:fit-content;
+            display: flex;
+            gap:15px;
+        }
+
+
+        #paymentbutton{
+            width : 80%;
+            height: 30px;
+            background-color: rgb(23, 11, 70);
+            color: white;
+            box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+            transition: transform 0.3s ease, background-color 0.3s ease;
+        }
+        .cancelbox{
+            transition: transform 0.3s ease, background-color 0.3s ease;
+        }
+        .cancelbox a {
+            height : 5px;
+            width: 80%;
+            color: rgb(62, 45, 45);
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .cancelbox:hover {
+            transform: scale(1.2);
+        }
+        .imgbox img{
+            height: 1.8rem;
+            width: 1.8rem;
+        }
+
+        #paymentbutton:hover {
+            transform: scale(1.2);
+            color: aquamarine;
+        } 
+    </style>
+
+</head>
+<body>
+    <div class="container">
+        <div class="cardbox">
+            <img src="razorpay.png" alt="">
+
+            <div class ="textbox">
+                <h2>Order summary</h2>
+
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum illum, iste quos similique amet praesentium at deserunt quasi beatae laboriosam.
+                </p>
+            </div>
+
+            <div class="amountbox">
+                <div class="leftbox">
+                    <div class="imgbox">
+                        <img src="Spotify-Logo-PNG-Cutout.png" alt="">
+                    </div>
+
+                    <div class="textAmountBox">
+                        <p>Amount</p>
+                        <p>$99.9/year</p>
+                    </div>
+
+                </div>
+
+                <div class="rightbox">
+                    <a href="#">Change</a>
+                </div>
+
+            </div>
+
+            <button id = "paymentbutton">
+                Proceed to Payment
+            </button>
+
+            <div class="cancelbox">
+                <a href="#">Cancel Order</a>
+            </div>
+
+        </div>
+    </div>
+</body>
+</html>
